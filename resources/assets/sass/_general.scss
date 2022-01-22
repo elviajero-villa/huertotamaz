@@ -1,0 +1,444 @@
+/*
+|--------------------------------------------------------------------------
+| Extend background
+|--------------------------------------------------------------------------
+*/
+
+%background-primary {
+  background: $atom-backgroundPrimary;
+}
+
+%background-primaryOpacity {
+  background: rgba($atom-backgroundPrimary,.6);
+}
+
+%background-secundary {
+  background: $atom-backgroundSecundary;
+}
+
+%background-third {
+  background: $atom-backgroundThird;
+}
+
+%background-black {
+  background: $atom-backgroundBlack;
+}
+
+%background-blackOpacity {
+  background: rgba($atom-backgroundBlack,.8);
+}
+
+%background-white {
+  background: $atom-colorWhite;
+}
+
+%background-gray {
+  background: $atom-backgroundGray;
+}
+
+%background-opacity1 {
+  opacity: 0.7;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Extend color
+|--------------------------------------------------------------------------
+*/
+
+%color-primary {
+  color: $atom-colorPrimary;
+}
+
+%color-secundary {
+  color: $atom-colorSecundary;
+}
+
+%color-colorWhite {
+  color: $atom-colorWhite;
+}
+
+%color-colorWhite-opacity1 {
+  color: rgba($atom-colorWhite, .6);
+}
+
+%color-colorGray {
+  color: $atom-colorGray;
+}
+
+%color-colorBlack {
+  color: $atom-colorBlack;
+}
+
+%color-colorBlack-opacity1 {
+  color: rgba($atom-colorBlack, .55);
+}
+/*
+|--------------------------------------------------------------------------
+| Extend Borders
+|--------------------------------------------------------------------------
+*/
+
+%border-solidThin {
+  border: $atom-borderSolid-thin;
+}
+
+%border-solidNone {
+  border: $atom-borderSolid-none;
+}
+
+%border-colorWhite {
+  border-color: $atom-colorWhite;
+}
+
+%border-colorPrimary {
+  border-color: $atom-colorPrimary;
+}
+
+%border-colorSecundary {
+  border-color: $atom-colorSecundary;
+}
+
+%border-colorGray {
+  border-color: $atom-colorGray;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Extend Shadows
+|--------------------------------------------------------------------------
+*/
+
+%boxShadow-primary {
+  box-shadow: $atom-boxShadow-primary;
+}
+
+%boxShadow-secundary {
+  box-shadow: $atom-boxShadow-secundary;
+}
+
+%boxShadow-third {
+  box-shadow: $atom-boxShadow-third;
+}
+
+%textShadow-primary {
+  text-shadow: $atom-textShadow-primary;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Extend Position
+|--------------------------------------------------------------------------
+*/
+%position-absoluteFull-Topleft {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Styles
+|--------------------------------------------------------------------------
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: $atom-fontSize-h-1;
+}
+
+h2 {
+  font-size: $atom-fontSize-h-2;
+}
+
+h3 {
+  font-size: $atom-fontSize-h-3;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+img {
+  color: transparent;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container-changue {
+  @media screen and (min-width: $atom-screen-gd-min) {
+    padding: 0 180px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: $atom-screen-sm-min) {
+  .container {
+    padding: 0 25px;
+  }
+} 
+
+
+.list-inline {
+  margin-left: 0;
+  li {
+    display: inline-block;
+  }
+}
+.titleCenter {
+  margin-bottom: 80px;
+  padding: 0 150px;
+}
+/*
+|--------------------------------------------------------------------------
+| atomos modificador background
+|--------------------------------------------------------------------------
+*/
+
+.atomBackground-primary {
+  @extend %background-primary;
+}
+
+.atomBackground-primaryOpacity {
+  @extend %background-primaryOpacity;
+}
+
+.atomBackground-secundary {
+  @extend %background-secundary;
+}
+
+.atomBackground-third {
+  @extend %background-third;
+}
+
+.atomBackground-white {
+  @extend %background-white;
+}
+
+.atomBackground-gray {
+  @extend %background-gray;
+}
+ 
+.atomBackground-black {
+  @extend %background-black;
+}
+
+.atomBackground-white-opacity1 {
+  @extend %background-white;
+  @extend %background-opacity1;
+}
+
+.atomBackground-black-opacity {
+  @extend %background-blackOpacity;
+}
+/*
+|--------------------------------------------------------------------------
+| atomos modificador color
+|--------------------------------------------------------------------------
+*/
+
+.atomColor-primary {
+  @extend %color-primary;
+}
+
+.atomColor-secundary {
+  @extend %color-secundary;
+}
+
+.atomColor-white {
+  @extend %color-colorWhite;
+}
+
+.atomColor-gray {
+  @extend %color-colorGray;
+}
+
+.atomColor-whiteOpacity1 {
+  @extend %color-colorWhite-opacity1;
+}
+
+.atomColor-Black {
+  @extend %color-colorBlack;
+}
+
+.atomColor-blackOpacity1 {
+  @extend %color-colorBlack-opacity1;
+}
+/*
+|--------------------------------------------------------------------------
+| atomos modificador border
+|--------------------------------------------------------------------------
+*/
+.atomBorder-solidThin {
+  @extend %border-solidThin;
+}
+
+.atomBorder-solidNone {
+  @extend %border-solidNone;
+}
+
+.atomBorder-colorWhite {
+  @extend %border-colorWhite;
+}
+
+.atomBorder-colorGray {
+  @extend %border-colorGray;
+}
+
+.atomBorder-colorPrimary {
+  @extend %border-colorPrimary;
+}
+
+.atomBorder-colorSecundary {
+  @extend %border-colorSecundary;
+}
+
+/*
+|--------------------------------------------------------------------------
+| atomos modificador border
+|--------------------------------------------------------------------------
+*/
+
+.atomBox-shadowPrimary {
+ @extend %boxShadow-primary;
+}
+
+.atomBox-shadowSecundary {
+ @extend %boxShadow-secundary;
+}
+
+.atomBox-shadowthird {
+ @extend %boxShadow-third;
+}
+
+.atomShadow-text-primary {
+ @extend %textShadow-primary; 
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 2000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+    @media screen and (max-width: $atom-screen-sm-min) {
+      display: none;
+    }
+  }
+
+  #cursor .cursor--inner {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px $atom-colorPrimary;
+    background: rgba($atom-colorPrimary, 0.1);
+  }
+}
+
+.height-100 {
+  height: 100%;
+  position: relative;
+}
+
+.height-40 {
+  height: 40%;
+  position: relative;
+  @media screen and (max-width: $atom-screen-sm-min) {
+    height: 20%;
+    padding-left: 0;
+    width: calc(100% + 30px);
+    .text {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: $atom-screen-st-min) {
+    padding-left: 15px;
+  }
+}
+
+.height-60 {
+  height: 60%;
+  position: relative;
+}
+
+.height-50-st {
+  @media screen and (max-width: $atom-screen-st-min) {
+    height: 50%;
+  }
+}
+.height-33-st {
+  @media screen and (max-width: $atom-screen-st-min) {
+    height: 33.33333%;
+  }
+}
+
+.margin-center-leftRight {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.flex-Content {
+  align-items: center;
+  display: flex;
+}
+
+.web-whats {
+  display: block;
+  @media screen and (max-width: $atom-screen-sm-min) {
+    display: none;
+  }
+}
+
+.phoneWhats {
+  padding: 10px 20px;
+  border: solid 0.5px rgba($atom-colorBlack, 0.5);
+  transition: background 0.5s;
+  background: rgba($atom-colorPrimary,.02);
+  @media screen and (max-width: $atom-screen-sm-min) {
+    background: rgba($atom-colorPrimary,.2);
+  }
+  .icon {
+    width: 30px;
+  }
+  .telefono {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+    vertical-align: sub;
+    margin-bottom: 0;
+    color: rgba($atom-colorBlack, 0.8);
+  }
+  &:hover {
+    background: rgba($atom-colorPrimary,.3);
+    transition: background 0.5s;
+  }
+}
+
+.mobile-whats {
+  display: none;
+  @media screen and (max-width: $atom-screen-sm-min) {
+    display: block;
+  }
+}
+
+.select-color-day {
+  cursor: pointer;
+}

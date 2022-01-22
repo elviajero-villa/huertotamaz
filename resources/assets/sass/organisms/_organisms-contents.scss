@@ -1,0 +1,687 @@
+.container-grid {
+  padding: 0 70px;
+  @media screen and (min-width: 1600px) {
+    padding: 0 200px;
+  }
+  @media screen and (max-width: $atom-screen-sm-min) {
+    padding: 0 70px;
+  }
+  @media screen and (max-width: $atom-screen-st-min) {
+    padding: 0 50px;
+  }
+  @media screen and (max-width: $atom-screen-xs-min) {
+    padding: 0 30px;
+  }
+}
+
+.section {
+  .container-grid {
+    padding-top: 50px;
+  }
+  .content-image {
+    position: relative;
+    .image {
+      position: relative;
+      width: 100%;
+      border: solid 1px $atom-colorBlack;
+      z-index: 1;
+      animation-name: imagegrayscale-general;
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      filter: grayscale(100%);
+      @keyframes imagegrayscale-general {
+        from  {filter: grayscale(100%);}
+        to {filter: grayscale(0%);}
+      }
+      @media screen and (max-width: $atom-screen-sm-min) {
+        margin: 0;
+        border: solid 2px $atom-colorBlack;
+      }
+    }
+    .squad-animationWhiteBottom {
+      width: 100%;
+      height: 100%;
+      background: $atom-backgroundWhite;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      animation-name: squadWhiteBottom;
+      animation-fill-mode: forwards;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      @keyframes squadWhiteBottom {
+        from {height: 100%;}
+        to {height: 0%;}
+      }
+      @media screen and (max-width: $atom-screen-sm-min) {
+        display: none;
+      }
+    }
+    .image-square {
+      position: absolute;
+      z-index: 1;
+      width: 40px;
+      right: 15px;
+      z-index: 1;
+    }
+    .image-square1 {
+      bottom: 15px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        width: 30px;
+        right: 30px;
+      }
+    }
+    .image-square2 {
+      top: 15px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        width: 30px;
+        right: 30px;
+      }
+    }
+    .image-square3 {
+      bottom: 15px;
+    }
+    .square-color {
+      position: absolute;
+      top: -25px;
+      height: calc(100% + 50px);
+      width: 400px;
+      right: -335px;
+      z-index: 0;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        right: -185px;
+        width: 300px;
+      }
+    }
+    .square-color2 {
+      position: absolute;
+      top: -30px;
+      width: 400px;
+      left: -77px;
+      z-index: 0;
+      height: calc(100% + 500px);
+      width: 400px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        left: -80px;
+        width: 240px;
+        height: calc(100% + 150px);
+      }
+    }
+    .image-huerto {
+      right: -335px;
+      position: absolute;
+      bottom: 0;
+      width: 320px;
+      filter: grayscale(100%);
+      @media screen and (max-width: 1153px) {
+        display: none;
+      }
+    }
+  }
+  .content-text-left {
+    padding-left: 60px;
+    @media screen and (max-width: $atom-screen-sm-min) {
+      padding-left: 20px;
+    }
+  }
+  .content-text-right {
+    padding-right: 60px;
+    @media screen and (max-width: $atom-screen-sm-min) {
+      padding-right: 0;
+    }
+  }
+}
+
+.sectionOne {
+  .content-image {
+    .image {
+      @media screen and (max-width: $atom-screen-sm-min) {
+        width: 40%;
+        position: absolute;
+        right: 15px;
+        top: -258px;
+        opacity: 0;
+        animation-name: imagegrayscale3;
+        @keyframes imagegrayscale3 {
+          from  {opacity: 0;}
+          to {opacity: 1;}
+        }
+      }
+      @media screen and (max-width: $atom-screen-xs-min) {
+        top: -190px;
+      }
+      @media screen and (max-width: 420px) {
+        width: 35%;
+      }
+    }
+  }
+  .content-text {
+    z-index: 1;
+    .text {
+      padding-top: 100px;
+      @media screen and (max-width: $atom-screen-md-min) {
+        padding-top: 50px;
+      }
+      @media screen and (max-width: $atom-screen-sm-min) {
+        padding-top: 0;
+      }
+      .title {
+        font-size: 45px;
+        line-height: 52px;
+        margin-bottom: 25px;
+        @media screen and (max-width: $atom-screen-md-min) {
+          font-size: 35px;
+          line-height: 45px;
+        }
+        @media screen and (max-width: $atom-screen-st-min) {
+          font-size: 30px;
+          line-height: 39px;
+        }
+        @media screen and (max-width: $atom-screen-xs-min) {
+          font-size: 25px;
+          line-height: 31px;
+        }
+        @media screen and (min-width: 1600px) {
+          font-size: 55px;
+          line-height: 65px;
+        }
+      }
+      .btn-proyect {
+        padding: 15px;
+        padding-left: 0;
+        @media screen and (max-width: $atom-screen-xs-min) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 420px) {
+          display: none;
+        }
+        @media screen and (min-width: 1600px) {
+          font-size: 23px;
+          margin-top: 35px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .content-courses {
+    @media screen and (max-width: $atom-screen-sm-min) {
+      margin-left: -70px;
+      margin-top: 80px;
+    }
+    @media screen and (max-width: $atom-screen-xs-min) {
+      margin-top: 50px;
+    }
+    @media screen and (max-width: $atom-screen-st-min) {
+      margin-left: -50px;
+    }
+    @media screen and (max-width: $atom-screen-xs-min) {
+      margin-left: -30px;
+      width: calc(100% + 30px);
+    }
+    .lines {
+      @media screen and (max-width: 420px) {
+        display: none;
+      }
+    }
+    .image {
+      height: 230px;
+      margin-left: -15px;
+      filter: grayscale(100%);
+      animation-name: imagegrayscale2;
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      @keyframes imagegrayscale2 {
+        from  {filter: grayscale(100%);}
+        to {filter: grayscale(0%);}
+      }
+      @media screen and (max-width: $atom-screen-md-min) {
+        height: 180px;
+      }
+      @media screen and (max-width: $atom-screen-sm-min) {
+        display: none;
+      }
+      @media screen and (min-width: 1600px) {
+        height: 300px;
+      }
+    }
+    .squad-animationWhiteLeft {
+      width: 100%;
+      height: 100%;
+      background: $atom-backgroundWhite;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      animation-name: squadWhiteLeft;
+      animation-fill-mode: forwards;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-timing-function: ease-in;
+      @keyframes squadWhiteLeft {
+        from {width: 100%;}
+        to {width: 0%;}
+      }
+      @media screen and (max-width: $atom-screen-sm-min) {
+        display: none;
+      }
+    }
+    .courses {
+      position: absolute;
+      padding-top: 50px;
+      top: 245px;
+      right: 15px;
+      left: -80px;
+      padding-left: 100px;
+      opacity: 0;
+      animation-name: courses;
+      animation-fill-mode: forwards;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      @media screen and (max-width: $atom-screen-md-min) {
+        top: 195px;
+        padding-top: 35px;
+      }
+      @media screen and (max-width: $atom-screen-sm-min) {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 20px 0 20px 170px;
+        background: transparent;
+      }
+      @media screen and (max-width: $atom-screen-st-min) {
+        padding: 20px 0 20px 150px;
+      }
+      @media screen and (min-width: 1600px) {
+        top: 315px;
+      }
+      @keyframes courses {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+      .title {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: $atom-screen-md-min) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: $atom-screen-xs-min) {
+          font-size: 16px;
+        }
+        @media screen and (min-width: 1600px) {
+          font-size: 30px;
+        }
+      }
+      .date {
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: $atom-screen-md-min) {
+          margin-bottom: 15px;
+        }
+        @media screen and (max-width: $atom-screen-xs-min) {
+          font-size: 16px;
+        }
+        @media screen and (min-width: 1600px) {
+          font-size: 26px;
+        }
+      }
+      .btn-square {
+        &:hover + .squad-active-animation {
+          width: 100%;
+          transition: width 1s;
+        }
+        @media screen and (max-width: $atom-screen-sm-min) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 135px;
+        }
+      }
+      .squad-active-animation {
+        width: 0%;
+        height: 100%;
+        background: #DFEAFB;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        transition: width 0.5s;
+      }
+    }
+  }
+}
+
+.sectionTwo {
+  .container-grid {
+    .content-image {
+      @media screen and (max-width: $atom-screen-st-min) {
+        width: 200px;
+        margin-bottom: 10px;
+      }
+    }
+    .content-text {
+      .title {
+        @media screen and (max-width: $atom-screen-md-min) {
+          font-size: 28px;
+        }
+        @media screen and (max-width: 420px) {
+          font-size: 22px;
+        }
+        @media screen and (min-width: 1600px) {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+      }
+      .parrafo {
+        margin-top: 15px;
+        padding-right: 67px;
+        @media screen and (max-width: $atom-screen-sm-min) {
+          padding-right: 0;
+        }
+        @media screen and (max-width: 420px) {
+          font-size: 14px;
+        }
+        @media screen and (min-width: 1600px) {
+          font-size: 25px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}
+
+.sectionTwo.active {
+  .image-huerto {
+    animation-name: imageHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    filter: grayscale(100%);
+    bottom: -20px;
+    opacity: 0;
+    @keyframes imageHuerto {
+      from {filter: grayscale(100%); bottom: -20px; opacity: 0;}
+      to {filter: grayscale(0%); bottom: 0; opacity: 1;}
+    }
+  }
+  .imageSection2  {
+    filter: grayscale(100%);
+    margin-top: -20px;
+    opacity: 0;
+    animation-name: imageHuerto2;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    @keyframes imageHuerto2 {
+      from {filter: grayscale(100%); margin-top: -20px; opacity: 0;}
+      to {filter: grayscale(0%); margin-top: 0; opacity: 1;}
+    }
+  }
+  .content-text2-animation {
+    opacity: 0;
+    padding-top: 20px; 
+    animation-name: textHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    @keyframes textHuerto {
+      from {padding-top: 20px; opacity: 0;}
+      to {padding-top: 10px; opacity: 1;}
+    }
+  }
+  .square-color {
+    width: 0;
+    animation-name: squareHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    @keyframes squareHuerto {
+      from {width: 0}
+      to {width: 400px;}
+    }
+    @media screen and (max-width: $atom-screen-sm-min) {
+      @keyframes squareHuerto {
+        from {width: 0;}
+        to {width: 300px;}
+      }
+    }
+  }
+  .icon-animation {
+    animation-name: iconHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    margin-top: -10px;
+    opacity: 0;
+    @keyframes iconHuerto {
+      from {margin-top: -10px;opacity: 0;}
+      to {margin-top: 0;opacity: 1;}
+    }
+  }
+}
+
+.sectionThree {
+  @media screen and (max-width: $atom-screen-st-min) {
+    .title {
+      font-size: 25px;
+    }
+  }
+  .content-contact {
+    padding-left: 35px;
+    @media screen and (max-width: $atom-screen-sm-min) {
+      padding-left: 15px;
+    }
+    .title {
+      margin-bottom: 35px;
+      margin-top: 25px;
+    }
+  }
+  .content-col1 {
+    padding-right: 60px;
+    .content-socialMedia {
+      text-align: right;
+      margin-top: 0px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        text-align: left;
+      }
+      a {
+        margin-top: 30px;
+        display: block;
+        @media screen and (max-width: $atom-screen-sm-min) {
+          display: inline-block;
+          margin-right: 20px;
+        }
+        > img {
+          width: 34px;
+        }
+      }
+    }
+    .parrafo {
+      @media screen and (max-width: $atom-screen-sm-min) {
+        display: none;
+      }
+      @media screen and (min-width: 1600px) {
+        font-size: 25px;
+        line-height: 37px;
+      }
+    }
+  } 
+}
+
+.sectionThree.active {
+  .parrafo-animation {
+    animation-name: parrafoHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    margin-top: -10px;
+    opacity: 0;
+    @keyframes parrafoHuerto {
+      from {margin-top: -10px;opacity: 0;}
+      to {margin-top: 0;opacity: 1;}
+    }
+  }
+  .content-socialMedia {
+    animation-name: socialHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    margin-top: -10px;
+    opacity: 0;
+    @keyframes socialHuerto {
+      from {margin-top: -10px;opacity: 0;}
+      to {margin-top: 0;opacity: 1;}
+    }
+  }
+  .square-color2 {
+    height: calc(0% + 0px);
+    animation-name: square2Huerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    @keyframes square2Huerto {
+      from {height: calc(0% + 0px);}
+      to {height: calc(100% + 450px);}
+    }
+    @media screen and (max-width: $atom-screen-sm-min) {
+      @keyframes square2Huerto {
+        from {height: calc(0% + 0px);}
+        to {height: calc(100% + 150px);}
+      }
+    }
+  }
+  .content-contact {
+    animation-name: imageHuerto;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    filter: grayscale(100%);
+    bottom: -20px;
+    opacity: 0;
+    @keyframes imageHuerto {
+      from {filter: grayscale(100%); bottom: -20px; opacity: 0;}
+      to {filter: grayscale(0%); bottom: 0; opacity: 1;}
+    }
+  }
+}
+
+.section-single {
+  padding-top: 40px;
+  opacity: 0;
+  animation-name: single;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  color: $atom-colorBlack;
+  z-index: 1;
+  position: relative;
+  @keyframes single {
+    from {padding-top: 40px; opacity: 0;}
+    to {padding-top: 100px; opacity: 1;}
+  }
+  .content-image {
+    opacity: 1;
+    .image {
+      @media screen and (max-width: $atom-screen-sm-min) { 
+        width: 30%;
+      }
+    }
+    .courses-information {
+      margin-top: 35px;
+      .phoneWhats {
+        margin-bottom: 35px;
+        .icon {
+          width: 25px;
+        }
+        .telefono {
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: $atom-screen-sm-min) { 
+        width: 68%;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 45px;
+        margin-top: 0;
+      }
+      @media screen and (max-width: $atom-screen-st-min) {
+        padding-left: 25px;
+      }
+      
+    }
+
+    .image-square {
+      @media screen and (max-width: $atom-screen-sm-min) {
+        right: auto;
+        left: 147px;
+        width: 22px;
+        top: 10px;
+      }
+    }
+    .square-color {
+      @media screen and (max-width: $atom-screen-sm-min) {
+        right: auto;
+        width: 240px;
+        left: 64px;        
+      }
+    }
+
+    .square-color3 {
+      right: auto;
+      left: -130px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        left: auto;
+        right: 30px;
+        bottom: -20px;
+        top: auto;
+      }
+    }
+  }
+  .content-image2 {
+    @media screen and (max-width: $atom-screen-sm-min) { 
+      text-align: right;
+    }
+  }
+  .content-text {
+    .title {
+      margin-bottom: 20px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        margin-top: 50px;
+      }
+      @media screen and (max-width: $atom-screen-st-min) {
+
+      }
+    }
+    .parrafo {
+      padding-right: 0;
+    }
+    .imageThreeColumns {
+      padding: 30px 0;
+      .image {
+        height: 150px;
+        display: inline-block;
+        width: 30%;
+        &:nth-child(2) {
+          margin: 0 10px;
+          width: calc(30% - 20px);
+        }
+        &:nth-child(3) {
+          width: 40%;
+        }
+      }
+    }
+  }
+  .subsection {
+    margin-bottom: 250px;
+    @media screen and (max-width: $atom-screen-sm-min) {
+      margin-bottom: 50px;
+    }
+  }
+}

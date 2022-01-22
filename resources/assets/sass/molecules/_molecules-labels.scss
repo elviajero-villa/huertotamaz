@@ -1,0 +1,18 @@
+/*
+|--------------------------------------------------------------------------
+| Labels
+|--------------------------------------------------------------------------
+*/
+.moleculeLabel-style {
+  background: $atom-backgroundWhite;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 4px 15px;
+  .icon {
+  	margin-right: 10px;
+	vertical-align: text-bottom;
+  }
+}
+.label-style2 {
+  background: $atom-backgroundSecundary;
+}

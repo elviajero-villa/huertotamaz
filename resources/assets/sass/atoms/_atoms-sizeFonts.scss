@@ -1,0 +1,20 @@
+/*
+|--------------------------------------------------------------------------
+| sizeFonts
+|--------------------------------------------------------------------------
+*/
+$atom-fontSize:           16px !default;
+//$atom-fontSize-xlarge:    ceil(($atom-fontSize * 1.90)) !default; // ~30px
+//$atom-fontSize-mlarge:    ceil(($atom-fontSize * 1.45)) !default; // ~23px
+$atom-fontSize-llarge:    ceil(($atom-fontSize * 1.25)) !default; // ~20px
+$atom-fontSize-slarge:    ceil(($atom-fontSize * 1.12)) !default; // ~18px
+$atom-fontSize-xsmall:    ceil(($atom-fontSize * 0.85)) !default; // ~14px
+//$atom-fontSize-msmall:    ceil(($atom-fontSize * 0.65)) !default; // ~11px
+//$atom-fontSize-ssmall:    ceil(($atom-fontSize * 0.55)) !default; // ~9px
+
+$atom-fontSize-h-1:       floor(($atom-fontSize * 2.50)) !default; // ~40px
+$atom-fontSize-h-2:       floor(($atom-fontSize * 2.15)) !default; // ~34px
+$atom-fontSize-h-3:       ceil(($atom-fontSize * 1.75)) !default;  // ~28px
+//$atom-fontSize-h-4:       ceil(($atom-fontSize * 1.25)) !default;  // ~20px
+//$atom-fontSize-h-5:       ceil(($atom-fontSize * 0.93)) !default;  // ~15px
+$atom-fontSize-h-6:       ceil(($atom-fontSize * 0.85)) !default;  // ~14px

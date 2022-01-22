@@ -1,0 +1,62 @@
+/*
+|--------------------------------------------------------------------------
+| Inputs
+|--------------------------------------------------------------------------
+*/
+%border-input {
+  border: $atom-borderSolid-thin;
+  border-color: $atom-colorBlack;
+}
+%text-inputMedian {
+  letter-spacing: 0.5px;
+  font-size: $atom-fontSize - 2;
+}
+
+%text-inputSmall {
+  letter-spacing: 0.3px;
+  font-size: $atom-fontSize-xsmall;
+}
+
+%padding-inputSmall {
+  padding: $atom-paddingInput-small;
+}
+
+%padding-inputMedium {
+  padding: $atom-paddingInput-medium;
+}
+
+%padding-inputSmall-icon {
+  padding: $atom-paddingInput-smallIcon;
+}
+
+%padding-inputMedium-icon {
+  padding: $atom-paddingInput-mediumIcon;
+}
+
+%borderRadius-input {
+  border-radius: $atom-borderRadius-input;
+}
+
+.moleculeInput-small {
+  @extend %text-inputSmall;
+  @extend %padding-inputSmall;
+  @extend %borderRadius-input;
+}
+
+.moleculeInput-medium {
+  @extend %text-inputMedian;
+  @extend %padding-inputMedium;
+  @extend %border-input;
+}
+
+.moleculeInput-smallIcon {
+  @extend %text-inputSmall;
+  @extend %padding-inputSmall-icon;
+  @extend %borderRadius-input;
+}
+
+.moleculeInput-mediumIcon {
+  @extend %text-inputMedian;
+  @extend %padding-inputMedium-icon;
+  @extend %borderRadius-input;
+}

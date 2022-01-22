@@ -1,0 +1,99 @@
+/*
+|--------------------------------------------------------------------------
+| Buttons
+|--------------------------------------------------------------------------
+*/
+%text-buttonBig {
+  letter-spacing: 0.8px;
+  font-size: $atom-fontSize-slarge;
+}
+
+%text-buttonMedian {
+  letter-spacing: 0.5px;
+  font-size: $atom-fontSize;
+}
+
+%text-buttonSmall {
+  letter-spacing: 0.3px;
+  font-size: $atom-fontSize-xsmall;
+}
+
+%padding-buttonSmall {
+  padding: $atom-paddingButton-small;
+}
+
+%padding-buttonMedium {
+  padding: $atom-paddingButton-medium;
+}
+
+%padding-buttonBig {
+  padding: $atom-paddingButton-big;
+}
+
+%button-style-general {
+  border-radius: 3px;
+}
+
+.moleculeButton-big {
+  @extend %text-buttonBig;
+  @extend %padding-buttonBig;
+  @extend %button-style-general;
+}
+
+.moleculeButton-medium {
+  @extend %text-buttonMedian;
+  @extend %button-style-general;
+  position: relative;
+  .img, p {
+    display: inline-block;
+  }
+  .img {
+    width: 20px;
+    margin-left: 10px;
+  }
+  .circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: -10px;
+    top: 9px;
+    transition: left 0.5s, background 1s, width 1s, height 1s;
+  }
+  &:hover {
+    .circle {
+      width: 40px;
+      height: 40px;
+      left: 158px;
+      background: rgba(182,128,189,0.2);
+      transition: left 1s, background 2s, width 2s, height 2s;
+      @media screen and (min-width: 1600px) {
+        left: 220px;
+      }
+    }
+  }
+}
+
+.moleculeButton-small {
+  @extend %text-buttonSmall;
+  @extend %padding-buttonSmall;
+  @extend %button-style-general;
+}
+
+.btn-square {
+  float: right;
+  position: relative;
+  margin-bottom: 0;
+  height: 120px;
+  width: 90px;
+  background: $atom-backgroundSecundary;
+  z-index: 1;
+  @media screen and (max-width: $atom-screen-md-min) {
+    height: 100px;
+    width: 70px;
+  }
+}
+.btn-square-small {
+  height: 100px;
+  width: 60px;
+}

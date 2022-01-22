@@ -1,0 +1,18 @@
+<?xml-stylesheet type="text/css" href="../../css/app.css" version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="22px" viewBox="0 0 37 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <script src="../../js/app.js"></script>
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g class="line-black" id="Desktop-HD" transform="translate(-1334.000000, -49.000000)" stroke="#ffffff" stroke-width="3">
+            <g id="Group-5" transform="translate(1317.000000, 45.000000)">
+                <g id="Group" transform="translate(19.000000, 5.000000)">
+                    <path d="M0,0.5 L33,0.5" id="Line-3"></path>
+                    <path d="M0,19 L33,19" id="Line-3"></path>
+                    <path d="M0,9.5 L33,9.5" id="Line-3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

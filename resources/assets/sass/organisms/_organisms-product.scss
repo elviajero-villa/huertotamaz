@@ -1,0 +1,135 @@
+.contentProduct {
+  .reparticion {
+    margin-bottom: 20px;
+    position: relative;
+    >.icon {
+      width: 35px;
+      vertical-align: middle;
+      opacity: 0.8;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        display: none!important;
+      }
+    }
+    .info {
+      display: inline-block;
+      margin-left: 10px;
+      width: calc(100% - 50px);
+      @media screen and (max-width: $atom-screen-sm-min) {
+        display: none;
+      }
+    }
+  }
+  .phoneWhats {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media screen and (max-width: $atom-screen-sm-min) {
+      position: relative;
+    }
+    .icon {
+      width: 25px;
+    }
+    .telefono {
+      font-size: 16px;
+    }
+  }
+  .product {
+    margin-top: 25px;
+    .textImage {
+      padding-left: 15px;
+      .title {
+        margin: 5px 0;
+      }
+    }
+    .imageContent {
+      .image {
+        width: 70px;
+      }
+      .image2 {
+        width: 50px;
+      }
+      .image3 {
+          width: 30px;
+      }
+      .circle {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+      }
+    }
+  }
+  .product-mobileNone {
+    @media screen and (max-width: $atom-screen-mg-min) {
+      display: none;
+    }
+  }
+  .product-MobileTwo {
+    @media screen and (max-width: $atom-screen-mg-min) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    @media screen and (max-width: $atom-screen-sm-min) {
+      display: none;
+    }
+  }
+  .product-MobileOne {
+    @media screen and (max-width: $atom-screen-st-min) {
+      display: none;
+    }
+  }
+  .product-special {
+    padding: 20px;
+    border: solid 1px $atom-colorBlack;
+    .contentTitle {
+      margin-bottom: 15px;
+      .title ,.price {
+        display: inline-block;
+      }
+      .price {
+        margin-left: 10px;
+      }        
+    }
+    .textImage {
+      .image {
+        height: 100px;
+      }        
+    }
+    .types {
+      padding-left: 40px;
+      .type {
+        display: inline-block;
+        padding: 5px 10px;
+        background: $atom-backgroundThird;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+  .row-product {
+    margin-bottom: 50px;
+    &:nth-child(3) {
+      margin-bottom: 50px;
+      margin-top: 50px;
+      @media screen and (max-width: $atom-screen-sm-min) {
+        margin-bottom: 0;
+      }
+    }
+    .product-col {
+      @media screen and (max-width: $atom-screen-sm-min) {
+        &:nth-child(2){
+          margin-top: 50px;
+        }
+      }
+    }
+    .product {
+      @media screen and (max-width: $atom-screen-sm-min) {
+        margin-top: 50px;
+      }
+    }
+  }
+}

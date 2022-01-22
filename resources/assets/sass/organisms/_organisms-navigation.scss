@@ -1,0 +1,100 @@
+#navbar {
+  top: 0;
+  position: fixed;
+}
+
+.navigation {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  .nav {
+    padding: 20px 0;
+    .link-section {
+      position: relative;
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .btn-menu {
+        display: block;
+        padding: 10px;
+        padding-right: 0;
+        .circle {
+          z-index: 0;
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          left: -10px;
+          top: 6px;
+          transition: top 1s, left 1s, background 1s, width 1s, height 1s;
+        }
+        .icon {
+          width: 34px;
+          z-index: 1;
+          position: relative;
+        }
+        &:hover {
+          .circle {
+            width: 25px;
+            height: 25px;
+            background: rgba(182,128,189,0.3);
+            left: 20px;
+            top: -2px;
+            transition: top 1s, left 1s, background 1s, width 1s, height 1s;
+          }
+        }
+      }
+    }
+    .logo {
+      width: 33px;
+    }
+  }
+}
+.modal.show {
+  .squareContent1 {
+    height: 100%;
+    background: white;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    animation-name: contentCursos;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    color: $atom-colorBlack;
+    @keyframes contentCursos {
+      from {width: 100%;}
+      to {width: 0%;}
+    }
+  }
+  .squareContent2 {
+    height: 100%;
+    background: white;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    animation-name: contentCursos2;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    color: $atom-colorBlack;
+    @keyframes contentCursos2 {
+      from {height: 100%;}
+      to {height: 0%;}
+    }
+  }
+}
+.modal-backdrop {
+  background: white;
+  opacity: 0.9!important;
+}
+
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}

@@ -1,0 +1,20 @@
+/*
+|--------------------------------------------------------------------------
+| breakPoints
+|--------------------------------------------------------------------------
+*/
+$atom-screen-ss-min:    320px;
+$atom-screen-xs-min:    480px;
+$atom-screen-st-min:    576px;
+$atom-screen-sm-min:    768px;
+$atom-screen-md-min:    992px;
+$atom-screen-mg-min:    1024px;
+$atom-screen-lg-min:    1200px;
+$atom-screen-gd-min:    1824px;
+
+$atom-screen-ss-max:    ($atom-screen-xs-min - 1);
+$atom-screen-xs-max:    ($atom-screen-sm-min - 1);
+$atom-screen-sm-max:    ($atom-screen-md-min - 1);
+$atom-screen-md-max:    ($atom-screen-mg-min - 1);
+$atom-screen-mg-max:    ($atom-screen-lg-min - 1);
+$atom-screen-lg-max:    ($atom-screen-gd-min - 1);

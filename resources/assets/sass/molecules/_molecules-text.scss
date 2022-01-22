@@ -1,0 +1,59 @@
+/*
+|--------------------------------------------------------------------------
+| Paragraphs
+|--------------------------------------------------------------------------
+*/
+%text-big {
+	letter-spacing: 0.8px;
+	font-size: $atom-fontSize-llarge - 2;
+	line-height: 24px;
+}
+
+%text-median {
+	letter-spacing: 0.5px;
+	line-height: 23px;
+	font-size: $atom-fontSize;
+}
+
+%text-small {
+	letter-spacing: 0.3px;
+	font-size: $atom-fontSize-xsmall - 1;
+}
+
+%text-regular {
+	font-family: $atom-typographySecundary;
+}
+
+%text-medium {
+	font-family: $atom-typoSecundary-medium;
+}
+
+.moleculeText-regular-big {
+	@extend %text-big;
+	@extend	%text-regular;
+}
+
+.moleculeText-regular-medium {
+	@extend %text-median;
+	@extend	%text-regular;
+}
+
+.moleculeText-regular-small {
+	@extend %text-small;
+	@extend	%text-regular;
+}
+
+.moleculeText-medium-big {
+	@extend %text-big;
+	@extend	%text-medium;
+}
+
+.moleculeText-medium-medium {
+	@extend %text-median;
+	@extend	%text-medium;
+}
+
+.moleculeText-medium-small {
+	@extend %text-small;
+	@extend	%text-medium;
+}

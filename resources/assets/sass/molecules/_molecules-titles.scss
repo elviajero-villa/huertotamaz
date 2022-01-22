@@ -1,0 +1,74 @@
+/*
+|--------------------------------------------------------------------------
+| Titles
+|--------------------------------------------------------------------------
+*/
+%title-big {
+	letter-spacing: 0.15px;
+}
+
+%title-median {
+  letter-spacing: 0.9px;
+  line-height: 32px;
+}
+
+%title-small {
+	letter-spacing: 0.5px;
+}
+
+%title-bold {
+	font-family: $atom-typoPrimary-bold;
+}
+
+%title-primary {
+	font-family: $atom-typographyPrimary;
+}
+
+%title-light {
+	font-family: $atom-typoPrimary-light;
+}
+
+.moleculeTitle-bold-big {
+	@extend %title-big;
+	@extend	%title-bold;
+}
+
+.moleculeTitle-bold-medium {
+	@extend %title-median;
+	@extend	%title-bold;
+}
+
+.moleculeTitle-bold-small {
+	@extend %title-small;
+	@extend	%title-bold;
+}
+
+.moleculeTitle-primary-big {
+	@extend %title-big;
+	@extend	%title-primary;
+}
+
+.moleculeTitle-primary-medium {
+	@extend %title-median;
+	@extend	%title-primary;
+}
+
+.moleculeTitle-primary-small {
+	@extend %title-small;
+	@extend	%title-primary;
+}
+
+.moleculeTitle-light-big {
+	@extend %title-big;
+	@extend	%title-light;
+}
+
+.moleculeTitle-light-medium {
+	@extend %title-median;
+	@extend	%title-light;
+}
+
+.moleculeTitle-light-small {
+	@extend %title-small;
+	@extend	%title-light;
+}

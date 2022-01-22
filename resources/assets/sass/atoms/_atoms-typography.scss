@@ -1,0 +1,50 @@
+/*
+|--------------------------------------------------------------------------
+| typographys
+|--------------------------------------------------------------------------
+*/
+	/*
+	|--------------------------------------------------------------------------
+	| src typographys
+	|--------------------------------------------------------------------------
+	*/
+		@font-face {
+		  font-family: 'barlow-bold';
+		  src: url('Barlow Bold'),
+		  local('barlow-bold'),
+		  url('../fonts/barlow/barlow-bold.ttf');
+		}
+		@font-face {
+		  font-family: 'barlow-light';
+		  src: url('barlow Light'),
+		  local('barlow-light'),
+		  url('../fonts/barlow/barlow-light.ttf');
+		}
+		@font-face {
+		  font-family: 'barlow-medium';
+		  src: url('Barlow Medium'),
+		  local('barlow-medium'),
+		  url('../fonts/barlow/barlow-medium.ttf');
+		}
+		@font-face {
+		  font-family: 'raleway-regular';
+		  src: local('Raleway Regular'),
+		  local('raleway-regular'),
+		  url('../fonts/raleway/raleway-regular.ttf');
+		}
+		@font-face {
+		  font-family: 'raleway-medium';
+		  src: local('Raleway Medium'),
+		  local('raleway-medium'),
+		  url('../fonts/raleway/raleway-medium.ttf');
+		}
+	/*
+	|--------------------------------------------------------------------------
+	| variables typographys
+	|--------------------------------------------------------------------------
+	*/
+	$atom-typographyPrimary:				'barlow-medium';
+	$atom-typoPrimary-bold:	 				'barlow-bold';
+	$atom-typoPrimary-light:				'barlow-light';
+	$atom-typographySecundary:				'raleway-regular';
+	$atom-typoSecundary-medium:		        'raleway-medium';

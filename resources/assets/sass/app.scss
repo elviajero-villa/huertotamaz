@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import "bootstrap/bootstrap/bootstrap";
+/*
+|--------------------------------------------------------------------------
+| Atoms
+|--------------------------------------------------------------------------
+*/
+@import "atoms/atoms-breakPoints";
+@import "atoms/atoms-typography";
+@import "atoms/atoms-sizeFonts";
+@import "atoms/atoms-color";
+@import "atoms/atoms-background";
+@import "atoms/atoms-padding";
+@import "atoms/atoms-borders";
+@import "atoms/atoms-image";
+@import "atoms/atoms-shadow";
+
+/*
+|--------------------------------------------------------------------------
+| Molecules
+|--------------------------------------------------------------------------
+*/
+@import "molecules/molecules-titles";
+@import "molecules/molecules-text";
+@import "molecules/molecules-buttons";
+@import "molecules/molecules-inputs";
+@import "molecules/molecules-boxes";
+@import "molecules/molecules-images";
+@import "molecules/molecules-labels";
+@import "molecules/molecules-background";
+@import "molecules/molecules-figuresGeometric";
+/*
+|--------------------------------------------------------------------------
+| Organisms
+|--------------------------------------------------------------------------
+*/
+@import "organisms/organisms-contents";
+@import "organisms/organisms-navigation";
+@import "organisms/organisms-header";
+@import "organisms/organisms-design";
+@import "organisms/organisms-footer";
+@import "organisms/organisms-sidebar";
+@import "organisms/organisms-post";
+@import "organisms/organisms-single";
+@import "organisms/organisms-team";
+@import "organisms/organisms-blurbs";
+@import "organisms/organisms-product";
+@import "organisms/organisms-modal";
+@import "organisms/organisms-portafolio";
+
+@import "general";
